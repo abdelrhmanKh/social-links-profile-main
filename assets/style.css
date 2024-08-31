@@ -163,7 +163,7 @@ main {
     width: 100%;
     margin-bottom: 20px;
 }
-.container button {
+.container span {
     background-color: var(--Grey-700);
     width: 100%;
     padding: 7px;
@@ -173,18 +173,40 @@ main {
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    text-align: center;
 }
-.container button:hover {
+.container span:hover {
     background-color: var(--Green);
     cursor: pointer;
 }
-.container button a {
+.container span a {
     text-decoration: none;
     font-size: 13px;
     color: white;
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
-.container button:hover a {
+.container span:hover a {
     color: var(--Grey-900);
+}
+
+@media (min-width: 700px) {
+    main {
+        min-width: 375px;
+    }
+
+    /* main {
+        padding-top: 10px;
+    }
+
+    .avatar {
+        margin-top: 30px;
+        max-width: 90px;
+    }
+    .name {
+        font-size: 26px;
+    } */
+    .container {
+        max-width: 90%;
+    }
 }
